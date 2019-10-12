@@ -31,14 +31,14 @@ public class Program
   public static void Main(string[] args)
   {
     IntraConfig config = IntraConfig.LoadConfig(args[0]); // Loads the config in the 1st argument, which is a file path. 
-    config.Config.Events.Clear();
-    Event e = new Event();
-    e.Time = 0;
-    Data data = new Data();
-    data.Type = DataType.SpawnObj;
-    data.DataString = "[LeftUpDownRight]";
-    e.Data = data.ConvertToReadableData();
-    config.Config.Events.Add(e);
+    config.Config.Events.Clear(); // Removes all events
+    Event e = new Event(); // Creates a new event object
+    e.Time = 0; // Sets the time to the begging of the map.
+    Data data = new Data(); // Makes a new data type
+    data.Type = DataType.SpawnObj; // We want to spawn in some arcs so use SpawnObj
+    data.DataString = "[LeftUpDownRight]"; // We want to have a full circle so we do [LeftUpDownRight]
+    e.Data = data.ConvertToReadableData(); // Convert it to readable data so Intra can load it
+    config.Config.Events.Add(e); // Add the event
   }
 }
 ```
@@ -51,15 +51,15 @@ public class Program
   public static void Main(string[] args)
   {
     IntraConfig config = IntraConfig.LoadConfig(args[0]); // Loads the config in the 1st argument, which is a file path. 
-    config.Config.Events.Clear();
-    Event e = new Event();
-    e.Time = 0;
-    Data data = new Data();
-    data.Type = DataType.SpawnObj;
-    data.DataString = "[LeftUpDownRight]";
-    e.Data = data.ConvertToReadableData();
-    config.Config.Events.Add(e);
-    config.SaveConfig();
+    config.Config.Events.Clear(); // Removes all events
+    Event e = new Event(); // Creates a new event object
+    e.Time = 0; // Sets the time to the begging of the map.
+    Data data = new Data(); // Makes a new data type
+    data.Type = DataType.SpawnObj; // We want to spawn in some arcs so use SpawnObj
+    data.DataString = "[LeftUpDownRight]"; // We want to have a full circle so we do [LeftUpDownRight]
+    e.Data = data.ConvertToReadableData(); // Convert it to readable data so Intra can load it
+    config.Config.Events.Add(e); // Add the event
+    config.SaveConfig(); // Save the config
   }
 }
 ```
