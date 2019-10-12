@@ -43,7 +43,7 @@ public class Program
 }
 ```
 ### Saving the config
-```
+```csharp
 using IntraSharp;
 
 public class Program
