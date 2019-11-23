@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c6385723b5874507a01dd130214a1bc0)](https://www.codacy.com/manual/KadeDev/IntraSharp?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KadeDev/IntraSharp&amp;utm_campaign=Badge_Grade)
 # IntraSharp
 An intralisim map configuration tool.
 
